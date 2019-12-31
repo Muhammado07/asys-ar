@@ -25,7 +25,9 @@ body {
   font-family: "Tahoma";
   direction: rtl !important;
 }
-
+button {
+  font-family: "Maurea", Fallback, sans-serif;
+}
 p,
 ul,
 li {
@@ -645,8 +647,4 @@ li {
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-
-.submit-button button {
-  font-family: "Tahoma";
 }
