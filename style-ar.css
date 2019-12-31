@@ -598,11 +598,11 @@ li {
 .efficient .effic-details .effic-info {
   border-right: 7px solid #07549f;
 }
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) {
   .efficient .details-2 .effic-info {
     padding-right: 20px;
   }
-}
+} */
 
 .efficient .effic-details .effic-info h3 {
   font-size: 33px;
