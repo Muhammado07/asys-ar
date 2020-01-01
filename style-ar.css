@@ -121,6 +121,7 @@ li {
   }
   .wrapper .interrupter.call-us {
     margin: 40px 0;
+    padding: 30px 0;
   }
 
   .wrapper .interrupter.call-us .call-us-copy {
@@ -284,6 +285,7 @@ li {
 .call-us {
   text-align: center;
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .call-us h3 {
@@ -336,7 +338,10 @@ li {
   text-align: center;
 }
 .york-info {
-  margin: 20px auto;
+  margin: 0px auto 20px;
+}
+.york-1 {
+  margin: 40px auto 20px;
 }
 .york-info .contain {
   display: flex;
@@ -441,6 +446,7 @@ li {
   max-width: 100%;
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 .shopss h2 {
   text-align: center;
@@ -554,7 +560,7 @@ li {
 .indv img {
   width: 100%;
   height: 335px;
-  object-fit: fill;
+  object-fit: contain;
 }
 @media screen and (max-width: 767px) {
   .indv img {
