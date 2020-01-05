@@ -736,7 +736,7 @@ li {
 @media screen and (max-width: 600px) {
   .key-project .key-details .key-img,
   .key-project .key-details .key-img img {
-    width: 370px;
+    width: 310px;
   }
 }
 .key-project .key-details .key-img:hover img {
@@ -752,6 +752,9 @@ li {
     justify-content: normal !important;
     flex-wrap: nowrap;
     scroll-snap-type: x mandatory;
+  }
+  .key-project .key-details::-webkit-scrollbar {
+    --webkit-scrollbar: none;
   }
   .key-project .key-details .key-img {
     flex-shrink: 0;
