@@ -708,11 +708,38 @@ li {
   text-align: center;
 }
 .key-project .key-details .key-img {
-  width: 400px;
+  width: 290px;
   height: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  margin-right: 5px;
+}
+@media screen and (max-width: 767px) {
+  .key-project .key-details .key-img {
+    margin-right: 0;
+  }
+}
+
+.key-project .key-details .key-img:nth-child(3),
+.key-project .key-details .key-img:nth-child(6),
+.key-project .key-details .key-img:nth-child(12) {
+  margin-right: 0;
 }
 .key-project .key-details .key-img img {
   max-width: 100%;
   display: block;
+  transition: all 0.3s;
+  height: 215px;
+  object-fit: cover;
+}
+@media screen and (max-width: 600px) {
+  .key-project .key-details .key-img,
+  .key-project .key-details .key-img img {
+    width: 370px;
+    height: 100%;
+  }
+}
+.key-project .key-details .key-img:hover img {
+  transform: scale(1.2);
 }
