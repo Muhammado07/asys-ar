@@ -780,10 +780,10 @@ li {
     background-color: #07549f;
     color: #fff;
     padding: 5px 10px;
-    margin-right: 5px;
+    margin-left: 5px;
     margin-bottom: 10px;
   }
   .key a:last-child {
-    margin-right: 0;
+    margin-left: 0;
   }
 }
