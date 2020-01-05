@@ -749,7 +749,7 @@ li {
   .key-project .key-details {
     display: flex;
     overflow-x: auto;
-    height: 250px;
+    height: 230px;
     -webkit-overflow-scrolling: touch;
     overflow-y: hidden;
     justify-content: normal !important;
@@ -773,7 +773,6 @@ li {
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
-    margin-bottom: 10px;
   }
   .key a {
     text-decoration: none;
