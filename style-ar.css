@@ -736,11 +736,14 @@ li {
 @media screen and (max-width: 600px) {
   .key-project .key-details .key-img,
   .key-project .key-details .key-img img {
-    width: 310px;
+    width: 370px;
   }
 }
 .key-project .key-details .key-img:hover img {
   transform: scale(1.2);
+}
+.key {
+  display: none;
 }
 @media screen and (max-width: 767px) {
   .key-project .key-details {
@@ -752,6 +755,7 @@ li {
     justify-content: normal !important;
     flex-wrap: nowrap;
     scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
   }
   .key-project .key-details::-webkit-scrollbar {
     --webkit-scrollbar: none;
@@ -762,5 +766,24 @@ li {
   }
   .key-project .key-details .key-img:hover img {
     transform: scale(1);
+  }
+  .key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  .key a {
+    text-decoration: none;
+    background-color: #07549f;
+    color: #fff;
+    padding: 5px 10px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+  }
+  .key a:last-child {
+    margin-right: 0;
   }
 }
