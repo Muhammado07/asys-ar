@@ -737,9 +737,27 @@ li {
   .key-project .key-details .key-img,
   .key-project .key-details .key-img img {
     width: 370px;
-    height: 100%;
   }
 }
 .key-project .key-details .key-img:hover img {
   transform: scale(1.2);
+}
+@media screen and (max-width: 767px) {
+  .key-project .key-details {
+    display: flex;
+    overflow-x: auto;
+    height: 250px;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: hidden;
+    justify-content: normal !important;
+    flex-wrap: nowrap;
+    scroll-snap-type: x mandatory;
+  }
+  .key-project .key-details .key-img {
+    flex-shrink: 0;
+    scroll-snap-align: start;
+  }
+  .key-project .key-details .key-img:hover img {
+    transform: scale(1);
+  }
 }
