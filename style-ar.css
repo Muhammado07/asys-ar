@@ -169,6 +169,8 @@ li {
 .hero .hero-image img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  background-size: cover;
 }
 
 .hero .hero-image h1 {
@@ -236,9 +238,21 @@ li {
   width: 100%;
   min-height: 40px;
   color: #fff;
-  background: #f37720;
-  background: linear-gradient(to right, #fdbc38 0%, #f37720 100%);
-  box-shadow: 0 3px 0 0 #f37720, 0 4px 4px -1px rgba(0, 0, 0, 0.6),
+  /* background: #f37720;
+  background: linear-gradient(to right, #fdbc38 0%, #f37720 100%); */
+  background: #1488cc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2b32b2,
+    #1488cc
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2b32b2,
+    #1488cc
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  box-shadow: 0 3px 0 0 #2b32b2, 0 4px 4px -1px rgba(0, 0, 0, 0.6),
     0 4px 6px 1px rgba(0, 0, 0, 0.3), 0 1px 2px 1px rgba(0, 0, 0, 0) inset,
     0 18px 32px -2px rgba(255, 255, 255, 0.1) inset;
 }
@@ -359,6 +373,9 @@ li {
   text-align: center;
 }
 @media screen and (max-width: 767px) {
+  .york-1 {
+    margin: 40px auto 0px;
+  }
   .york-info .contain {
     flex-direction: column;
   }
@@ -595,10 +612,10 @@ li {
     height: auto;
   }
 }
-.efficient,
+/* .efficient,
 .commer {
   margin-bottom: 30px;
-}
+} */
 .efficient .effic-head,
 .commer .commer-head {
   text-align: center !important;
@@ -625,9 +642,15 @@ li {
   margin-bottom: 40px;
 }
 @media screen and (max-width: 767px) {
+  .commer .commer-head {
+    margin-bottom: 10px;
+  }
   .efficient .effic-head h2,
   .commer .commer-head h2 {
     font-size: 24px;
+  }
+  .efficient .effic-head h2 {
+    margin-top: 0;
   }
   .efficient .effic-details {
     flex-direction: column;
@@ -647,6 +670,18 @@ li {
   font-weight: bold;
   margin: 0;
   margin-right: 20px;
+  position: relative;
+}
+.efficient .effic-details .effic-info h3:after {
+  content: "";
+  position: absolute;
+  display: block;
+  right: 0;
+  bottom: -7px;
+  width: 115px;
+  height: 4px;
+  border-radius: 5px;
+  background-color: #07549f;
 }
 .efficient .effic-details .effic-img img {
   width: 450px;
@@ -659,6 +694,9 @@ li {
   }
   .efficient .effic-details .effic-info h3 {
     font-size: 22px;
+  }
+  .efficient .effic-details .effic-info h3:after {
+    width: 77px;
   }
   .efficient .effic-details .effic-info {
     margin-top: 20px;
@@ -699,6 +737,8 @@ li {
   margin-bottom: 30px;
   font-size: 30px;
   text-align: center;
+  margin-bottom: 10px;
+  margin-top: 0;
 }
 .key-project .key-details {
   display: flex;
@@ -756,10 +796,24 @@ li {
     flex-wrap: nowrap;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
+    direction: ltr !important;
   }
-  .key-project .key-details::-webkit-scrollbar {
+  /* .key-project .key-details::-webkit-scrollbar {
     --webkit-scrollbar: none;
+  } */
+
+  .key-project .key-details::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
   }
+  .key-project .key-details::-webkit-scrollbar-thumb {
+    background: #07549f;
+    border-radius: 10px;
+  }
+  .key-project .key-details::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
   .key-project .key-details .key-img {
     flex-shrink: 0;
     scroll-snap-align: start;
@@ -773,6 +827,7 @@ li {
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
+    direction: ltr !important;
   }
   .key a {
     text-decoration: none;
@@ -783,6 +838,6 @@ li {
     margin-bottom: 10px;
   }
   .key a:last-child {
-    margin-left: 0;
+    margin-right: 0;
   }
 }
