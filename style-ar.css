@@ -797,6 +797,7 @@ li {
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     direction: ltr !important;
+    margin-bottom: 10px;
   }
   /* .key-project .key-details::-webkit-scrollbar {
     --webkit-scrollbar: none;
