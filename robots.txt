@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /cgi-bin/
-Disallow: /img/
-Disallow: /style.css
+Disallow: https://muhammado07.github.io/asys-ar/img/
+Disallow: https://muhammado07.github.io/asys-ar/style-ar.css
