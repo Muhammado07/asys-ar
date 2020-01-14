@@ -154,6 +154,11 @@ li {
   display: block;
   max-width: 100%;
 }
+@media screen and (max-width: 767px) {
+  .header img {
+    width: 110px;
+  }
+}
 .hero {
   text-align: center;
   font-weight: 100;
@@ -188,15 +193,15 @@ li {
   right: 0;
   color: #fff;
   font-size: 28px;
-  background: rgba(0, 83, 158, 1);
+  background: rgba(0, 83, 158, 0.7);
   padding: 10px 0;
 }
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) {
   .hero .hero-image h1 {
     font-size: 24px;
     background: rgba(0, 83, 158, 0.5);
   }
-}
+} */
 
 .interrupter {
   background: #f4f6f3;
@@ -247,21 +252,10 @@ li {
   width: 100%;
   min-height: 40px;
   color: #fff;
-  /* background: #f37720;
-  background: linear-gradient(to right, #fdbc38 0%, #f37720 100%); */
-  background: #1488cc; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #2b32b2,
-    #1488cc
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #2b32b2,
-    #1488cc
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #f37720;
+  background: linear-gradient(to right, #fdbc38 0%, #f37720 100%);
 
-  box-shadow: 0 3px 0 0 #2b32b2, 0 4px 4px -1px rgba(0, 0, 0, 0.6),
+  box-shadow: 0 3px 0 0 #f37720, 0 4px 4px -1px rgba(0, 0, 0, 0.6),
     0 4px 6px 1px rgba(0, 0, 0, 0.3), 0 1px 2px 1px rgba(0, 0, 0, 0) inset,
     0 18px 32px -2px rgba(255, 255, 255, 0.1) inset;
 }
