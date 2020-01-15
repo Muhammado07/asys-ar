@@ -1,5 +1,3 @@
-/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
-
 @font-face {
   font-family: "GE-SS-Medium";
   src: url("fonts/GE-SS-Medium.otf") format("opentype");
@@ -88,23 +86,23 @@ li {
     width: 300px;
   }
 
-  /* .landing-page-content.flex {
+  .landing-page-content.flex {
     display: flex;
-  } */
+  }
 
   .wrapper .landing-page-content h3 {
     color: #000;
     margin-top: 40px;
   }
 
-  /* .product-wrapper.half {
+  .product-wrapper.half {
     flex: 50%;
     padding: 0 10px;
   }
 
   .product-wrapper.full {
     flex: 100%;
-  } */
+  }
 
   .landing-page-content .product-wrapper .product-image {
     margin-left: 0;
@@ -451,6 +449,15 @@ li {
   font-size: 30px;
   margin-bottom: 0;
 }
+.york-info .contain .york-details h4 {
+  text-align: right;
+  color: #07549f;
+  font-size: 22px;
+  margin-bottom: 0;
+}
+.york-info .contain .york-details ul {
+  padding-right: 10px;
+}
 .york-info .contain .york-details p {
   text-align: right;
 }
@@ -740,6 +747,9 @@ li {
   -ms-flex-align: center;
   align-items: center;
   margin-bottom: 40px;
+}
+.efficient .effic-details .effic-info {
+  width: 100%;
 }
 @media screen and (max-width: 767px) {
   .commer .commer-head {
