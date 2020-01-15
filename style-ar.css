@@ -33,7 +33,7 @@ p,
 ul,
 li {
   color: #333;
-  text-align: justify;
+  text-align: initial;
   line-height: 1.5;
 }
 
